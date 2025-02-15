@@ -12,6 +12,11 @@ export const CommentForm = ({ articleId }: { articleId: string }) => {
   const onCreateHander = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (!user) {
+      alert("로그인 후 댓글 입력 가능합니다.");
+      return;
+    }
+
     if (!comment.trim()) {
       alert("댓글을 입력해주세요");
       return;
