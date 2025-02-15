@@ -1,22 +1,5 @@
-import { mockDataItemType, mockNewsData } from "./mockData";
-
-interface NewsItem {
-  article_id: string;
-  title: string;
-  link: string;
-  keywords: string[] | null;
-  creator: string[] | null;
-  video_url: string | null;
-  description: string | null;
-  content: string;
-  pubDate: string;
-  image_url: string | null;
-  source_id: string;
-  source_name: string;
-  source_url: string;
-  language: string;
-  category: string[];
-}
+import { mockDataItemType, NewsItem } from "../shared/types/news.types";
+import { mockNewsData } from "./mockData";
 
 interface CachedData {
   timestamp: number;

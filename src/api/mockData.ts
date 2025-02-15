@@ -1,9 +1,5 @@
-export interface mockDataItemType {
-  article_id: string;
-  title: string;
-  image_url: string | null;
-  description: string | null;
-}
+import { mockDataItemType } from "../shared/types/news.types";
+
 export const mockNewsData: mockDataItemType[] = [
   {
     article_id: "mock1",
