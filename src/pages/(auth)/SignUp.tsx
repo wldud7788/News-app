@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { AuthForm } from "../components/auth/AuthForm";
-import { SocialLogin } from "../components/auth/SocialLogin";
+import { AuthForm } from "../../components/auth/AuthForm";
+import { SocialLogin } from "../../components/auth/SocialLogin";
 
 export const SignUp = () => {
   return (

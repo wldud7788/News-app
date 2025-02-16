@@ -1,11 +1,11 @@
 import { Navigate, Outlet, Route, Routes } from "react-router-dom";
-import { Login } from "../pages/Login";
-import { SignUp } from "../pages/SignUp";
+import { Login } from "../pages/(auth)/Login";
+import { SignUp } from "../pages/(auth)/SignUp";
 import { Mypage } from "../pages/Mypage";
 import { Home } from "../pages/Home";
 import { useAuthContext } from "../context/useAuthContext";
-import { MypageSkeleton } from "../pages/MypageSkeleton";
 import { NewsDetail } from "../pages/NewsDetail";
+import { MypageSkeleton } from "../components/mypage/MypageSkeleton";
 
 export const AppRoutes = () => {
   const { isAuthenticated, isLoading } = useAuthContext();

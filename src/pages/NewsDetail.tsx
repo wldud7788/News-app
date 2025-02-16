@@ -4,6 +4,7 @@ import { fetchNews } from "../api/api";
 
 import { CommentList } from "../components/newsDetail/CommentList";
 import { CommentForm } from "../components/newsDetail/CommentForm";
+import { NewsInfo } from "../components/newsDetail/NewsInfo";
 
 export const NewsDetail = () => {
   const params = useParams();
@@ -30,16 +31,7 @@ export const NewsDetail = () => {
 
   return (
     <div key={currentNews.article_id} className="w-full">
-      <div className="rounded-lg overflow-hidden h-[300px]">
-        <img
-          src={currentNews.image_url || "/img/img_default_news.jpg"}
-          className="w-full object-cover"
-        />
-      </div>
-      <h4 className="font-bold mt-3">{currentNews.title}</h4>
-      <p className="text-[14px] text-[#4a4a4a] mt-3">
-        {currentNews?.description}
-      </p>
+      <NewsInfo currentNews={currentNews} />
 
       {/* 댓글 부분 */}
       <CommentForm articleId={currentNews?.article_id} />
