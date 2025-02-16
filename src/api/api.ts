@@ -1,16 +1,16 @@
-import { mockDataItemType, NewsItem } from "../shared/types/news.types";
+import { MockDataItemType, NewsItem } from "../shared/types/news.types";
 import { mockNewsData } from "./mockData";
 
 interface CachedData {
   timestamp: number;
-  data: NewsItem[] | mockDataItemType[];
+  data: NewsItem[] | MockDataItemType[];
 }
 
 // 1시간을 캐싱 타임으로 설정
 const CACHE_DURATION = 1000 * 60 * 60;
 
 // 뉴스 데이터 호출 함수
-export const fetchNews = async (): Promise<NewsItem[] | mockDataItemType[]> => {
+export const fetchNews = async (): Promise<NewsItem[] | MockDataItemType[]> => {
   const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
   // localStorage에서 캐시된 데이터 확인

@@ -1,6 +1,6 @@
-import { mockDataItemType } from "../shared/types/news.types";
+import { MockDataItemType } from "../shared/types/news.types";
 
-export const mockNewsData: mockDataItemType[] = [
+export const mockNewsData: MockDataItemType[] = [
   {
     article_id: "mock1",
     title:
