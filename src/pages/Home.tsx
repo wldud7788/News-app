@@ -20,6 +20,13 @@ export const Home = () => {
       {news?.map((item) => {
         return <NewsCard key={item.article_id} item={item} />;
       })}
+      <button
+        onClick={() => {
+          throw new Error("This is your first error!");
+        }}
+      >
+        Sentry 테스트를 위한 오류 버튼
+      </button>
     </div>
   );
 };
