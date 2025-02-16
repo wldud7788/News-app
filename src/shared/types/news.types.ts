@@ -15,7 +15,7 @@ export interface NewsItem {
   language: string;
   category: string[];
 }
-export interface mockDataItemType {
+export interface MockDataItemType {
   article_id: string;
   title: string;
   image_url: string | null;
