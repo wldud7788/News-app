@@ -20,13 +20,17 @@
 ### 메인 페이지
 
 - 뉴스 API를 활용한 최신 뉴스 목록 제공
+  <div>
   <img src="https://github.com/user-attachments/assets/b5be24cd-f906-47c7-93c8-f14e8c8356ca" width="600" />
+  </div>
 
 ### 뉴스 상세 페이지
 
 - 뉴스 전문 확인
 - 댓글 작성, 수정, 삭제 기능
+  <div>
   <img src="https://github.com/user-attachments/assets/4c1bc50d-c2bd-4d68-8a03-cd96ccb9c3e9" width="600" />
+  </div>
 
 ### 사용자 인증
 
@@ -41,7 +45,9 @@
 
 - 프로필 이미지 수정
 - 닉네임 수정
+  <div>
   <img src="https://github.com/user-attachments/assets/724c810e-4e3a-4163-a17d-252747e7bdd5" width="600" />
+  </div>
 
 ## 🛠 기술 스택
 
