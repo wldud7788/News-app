@@ -9,7 +9,7 @@ export const NewsInfo = ({ currentNews }: NewsInfoProps) => {
       <div className="rounded-lg overflow-hidden h-[300px]">
         <img
           src={currentNews.image_url || "/img/img_default_news.jpg"}
-          className="w-full object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
       <h4 className="font-bold mt-3">{currentNews.title}</h4>

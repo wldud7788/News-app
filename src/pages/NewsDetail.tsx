@@ -5,6 +5,7 @@ import { fetchNews } from "../api/api";
 import { CommentList } from "../components/newsDetail/CommentList";
 import { CommentForm } from "../components/newsDetail/CommentForm";
 import { NewsInfo } from "../components/newsDetail/NewsInfo";
+import { NewsDetailLoading } from "../components/newsDetail/NewsDetailLoading";
 
 export const NewsDetail = () => {
   const params = useParams();
@@ -20,7 +21,7 @@ export const NewsDetail = () => {
     gcTime: 1000 * 60 * 60,
   });
 
-  if (isLoading) return <div>...Loading</div>;
+  if (isLoading) return <NewsDetailLoading />;
   if (error) return <div>{error.message}</div>;
 
   const currentNews = news?.find((item) => item.article_id === params.id);
@@ -32,7 +33,6 @@ export const NewsDetail = () => {
   return (
     <div key={currentNews.article_id} className="w-full">
       <NewsInfo currentNews={currentNews} />
-
       {/* 댓글 부분 */}
       <CommentForm articleId={currentNews?.article_id} />
       <CommentList articleId={currentNews?.article_id} />

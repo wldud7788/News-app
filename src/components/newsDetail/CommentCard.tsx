@@ -39,7 +39,7 @@ export const CommentCard = ({ comment }: CommentCardProps) => {
           <img
             src={comment.profiles.avatar_url}
             alt="프로필 이미지"
-            className="rounded-full w-[50px] h-[50px] object-cover"
+            className="rounded-full w-[50px] h-[50px] object-cover flex-shrink-0"
           />
           <div>
             <p className="font-medium">{comment.profiles.email}</p>

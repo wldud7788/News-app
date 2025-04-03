@@ -8,13 +8,13 @@ export const NewsCard = ({ item }: NewsCard) => {
   return (
     <>
       <div
-        className="w-[250px]"
+        className="w-full sm:w-[250px] shadow-sm rounded-lg p-4"
         onClick={() => nav(`/newsDetail/${item.article_id}`)}
       >
-        <div className="rounded-lg overflow-hidden">
+        <div className="rounded-lg overflow-hidden h-[200px]">
           <img
             src={item.image_url || "/img/img_default_news.jpg"}
-            className="w-full h-[200px] object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <h4 className="font-bold line-clamp-1 mt-3">{item?.title}</h4>
